@@ -1,5 +1,7 @@
 <h1>Kurser</h1>
 
+<label for ="sok">Sök</label><br>
+<input type="text" id="sok" [(ngModel)]="filteredValue" (input)="applyfilter()">
 <table id="table">
     <thead>
         <tr>
@@ -9,10 +11,10 @@
         </tr>
     </thead>
     <tbody id="tbody">
-        <tr *ngFor="let course of courses">
-            <td>{{course.code}}</td>
-            <td>{{course.coursename}}</td>
-            <td>{{course.progression}}</td>
+        <tr class="tr" *ngFor="let course of filteredCourses">
+            <td class="td-bottum">{{course.code}}</td>
+            <td class="td-bottum">{{course.coursename}}</td>
+            <td class="td-bottum">{{course.progression}}</td>
         </tr>
     </tbody>
 </table>
