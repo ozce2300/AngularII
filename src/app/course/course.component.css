@@ -28,3 +28,7 @@ input {
 #reverse, #reverse1, #reverse2 {
     cursor: pointer;
 }
+
+#table-wrapper {
+    overflow-x:auto;
+}
