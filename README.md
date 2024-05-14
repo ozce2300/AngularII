@@ -1,27 +1,20 @@
-# AngularII
+# Angular Kurskatalog app
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+## Beskrivning
+Denna Angular-applikation är utformad för att visa en lista över kurser med tillhörande information som hämtas från en JSON-fil. Användare kan sortera data baserat på kurskod, kursnamn eller progression, samt filtrera kurser genom att ange en textfras.
 
-## Development server
+## Funktioner
+- Hämtar data från en JSON-fil genom en service som använder HttpClient.
+- Presenterar data i en tabell med information om kurskod, kursnamn och progression.
+- Möjliggör sorteringsfunktion för kurskod, kursnamn och progression.
+- Tillhandahåller filtreringsfunktion för att söka efter kurser baserat på textfras.
+- Uppdaterar användargränssnittet automatiskt vid sortering och ändring av sökfras.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Publicering
+Applikationen kan publiceras på Netlify.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Kontakta
+Om du har några frågor eller förslag, kontakta mig gärna på ozgur.celik@live.se.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
