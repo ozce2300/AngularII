@@ -36,4 +36,11 @@ export class CourseComponent {
 )
   }
 
+  sortData(column: keyof Course): void {
+    this.filteredCourses = this.filteredCourses.sort((a, b) => {
+        const valA = (a[column] as string).toLowerCase();
+        const valB = (b[column] as string).toLowerCase();
+        return valA.localeCompare(valB);
+    });
+}
 }

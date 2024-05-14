@@ -2,15 +2,20 @@
 
 <label for ="sok">Sök</label><br>
 <input type="text" id="sok" [(ngModel)]="filteredValue" (input)="applyfilter()">
+
+
 <table id="table">
     <thead>
         <tr>
-            <td id="reverse"><u>Kurskod</u></td>
-            <td id="reverse1"><u>Namn</u></td>
-            <td id="reverse2"><u>Progression</u></td>
+            <td id="reverse" (click)="sortData('code')"><u>Kurskod</u></td>
+            <td id="reverse1" (click)="sortData('coursename')"><u>Namn</u></td>
+            <td id="reverse2" (click)="sortData('progression')"><u>Progression</u></td>
         </tr>
     </thead>
     <tbody id="tbody">
+        @if(filteredCourses.length === 0) {
+            <p>Inga kurser...Var vänligt och skriv in rätt</p>
+        }
         <tr class="tr" *ngFor="let course of filteredCourses">
             <td class="td-bottum">{{course.code}}</td>
             <td class="td-bottum">{{course.coursename}}</td>

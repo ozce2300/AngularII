@@ -24,3 +24,7 @@ input {
     padding: 5px;
     border-radius: 5px;
 }
+
+#reverse, #reverse1, #reverse2 {
+    cursor: pointer;
+}
